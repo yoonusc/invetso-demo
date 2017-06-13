@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profiledash">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="313dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="45dp"
+            android:id="@+id/textViewWelcome" />
+
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="126dp"
+            android:id="@+id/imageViewAvatar"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/bg_player_profile_default_big"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User Name"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:id="@+id/textViewUserName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_gravity="center"
+                    android:layout_height="64dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/income"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_below="@+id/personallayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Financial"
+                    android:textColor="#ed7c7c"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnf"
+                    android:layout_alignTop="@+id/imageView13"
+                    android:layout_alignLeft="@+id/financial"
+                    android:layout_alignStart="@+id/financial"
+                    android:layout_alignBottom="@+id/imageView13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnf"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/financial"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personallayout"
+                    android:gravity="bottom"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_gravity="center"
+                    android:layout_height="64dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/bg_player_profile_default_big"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/textMobileNo"
+                    android:layout_toStartOf="@+id/textMobileNo"
+                    android:layout_marginRight="33dp"
+                    android:layout_marginEnd="33dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Personal"
+                    android:textColor="#ed7c7c"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnp"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnp"
+                    android:text="Name"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/personal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:id="@+id/textMobileNo"
+                        android:layout_below="@+id/personal"
+                        android:layout_alignLeft="@+id/personal"
+                        android:layout_alignStart="@+id/personal" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

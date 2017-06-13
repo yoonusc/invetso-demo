@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="infinity.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".verification_otp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+
+        <activity android:name=".personnel_details"
+            android:label="@string/app_name" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+
+
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/sign_up"
+            android:theme="@style/AppTheme">
+             <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+
+
+        <activity android:name=".bank_details"
+            android:label="@string/app_name" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+        <activity android:name=".deposit"
+        android:label="@string/app_name" android:windowSoftInputMode="stateHidden">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter></activity>
+        <activity android:name=".withdrawal"
+            android:label="@string/app_name" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+        <activity android:name=".finance_details"
+            android:label="@string/app_name" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+        <activity android:name=".forgot_pwd1"></activity>
+        <activity android:name=".forgot_pwd2"></activity>
+        <activity android:name=".roundup"></activity>
+        <activity android:name=".historydetails"></activity>
+        <activity android:name=".financial"></activity>
+        <activity android:name=".linkacc"></activity>
+        <activity android:name=".addfundingacc"></activity>
+        <activity android:name=".web"></activity>
+
+
+        <activity android:name=".MainActivity" android:label="@string/home" android:theme="@style/AppTheme"></activity>
+        <activity android:name=".Main"    android:label="@string/home"      android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".signup"
+            android:label="@string/sign_up"
+
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+
+        <activity
+            android:name=".ProfileDetails"
+            android:label="@string/sign_up"
+
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Support"
+            android:label="@string/sign_up"
+
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+    </application>
+
+</manifest>

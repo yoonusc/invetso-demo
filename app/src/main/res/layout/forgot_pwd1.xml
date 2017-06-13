@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.0"
+        android:background="#2b2f38">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/investo_logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Enter username to recover your password"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textView3"
+                android:textColor="#2269d4" />
+
+            <EditText
+                android:id="@+id/editOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textSize="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView3"
+                android:inputType="textPassword"
+                android:hint="username"
+                android:backgroundTint="#86aae0"/>
+
+            <Button
+                android:id="@+id/submit_otp"
+                android:layout_width="500dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/box_with_click_effect"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editOTP"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Proceed"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

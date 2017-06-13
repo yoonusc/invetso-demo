@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/tutorial_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#2eb5aa" />
+
+    <ImageView
+        android:id="@id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="80.0dip"
+        android:src="@drawable/tutorial_map" />
+
+    <ImageView
+        android:id="@id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="180.0dip"/>
+
+    <TextView
+        android:id="@id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/map"
+        android:paddingLeft="@dimen/tutorial_horizontal_padding"
+        android:paddingRight="@dimen/tutorial_horizontal_padding"
+        android:paddingTop="70dp"
+        android:text="@string/tutorial_one_text"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/tutorial_text_size" />
+</RelativeLayout>

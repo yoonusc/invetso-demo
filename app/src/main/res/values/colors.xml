@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="background_a">#ffaaaaaa</color>
+    <color name="background_b">#ffbbbbbb</color>
+    <color name="background_c">#ffcccccc</color>
+    <color name="background_d">#ffdddddd</color>
+    <color name="background_e">#ffeeeeee</color>
+    <color name="background_opaque">#ff888888</color>
+    <color name="button">#88ffffff</color>
+    <color name="primary">#f06876</color>
+    <color name="primary_600">#87222d</color>
+    <color name="primary_1">#49deb6</color>
+    <color name="primary_600_1">#24ab87</color>
+    <color name="primary_2">#eacc20</color>
+    <color name="primary_600_2">#ba9f05</color>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="black">#000000</color>
+    <color name="nliveo_blue_alpha_colorPrimaryDark">#9a30be7a</color>
+    <color name="nliveo_blue_colorPrimary">#43d08c</color>
+    <color name="nliveo_blue_colorPrimaryDark">#30be7a</color>
+    <color name="ColorPrimary">#30be7a</color>
+    <color name="tabsScrollColor">#30be7a</color>
+    <color name="blue_normal">#00BCD4</color>
+    <color name="blue_pressed">#49deb6</color>
+    <color name="purple_progress">#eacc20</color>
+
+</resources>

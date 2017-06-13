@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Home</string>
+    <string name="action_about">About</string>
+    <string name="app_name">Investo</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="clear">clear</string>
+    <string name="register">register</string>
+    <string name="action_settings">Settings</string>
+    <string name="tutorial_one_text">Connect any credit or debit card to round up and invest your spare change .\n Make it Automatic or do it yourself</string>
+    <string name="tutorial_three_text">No minimum or no commission on trades .</string>
+    <string name="tutorial_two_text">You can also invest any amount ant any time . \n See the power of compound growth in real-time .</string>
+    <string name="tutorial_zero_text">Lets Get Started</string>
+    <string name="forgotpass">Please enter your registered email address. \n Login details will be emailed to you</string>
+    <string name="inbox">Inbox</string>
+    <string name="roundup">Round-ups</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">WithDraw</string>
+    <string name="categories">Categories</string>
+    <string name="history">History</string>
+    <string name="invite">Invite Friends</string>
+    <string name="settings">Settings</string>
+    <string name="rest">   \t\tReset \n Paswword</string>
+    <string name="restkey">   \tReset \n Pincode</string>
+    <string name="mail_id">support@investo.com</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+
+    <string name="important">Important</string>
+    <string name="documents">Documents</string>
+
+    <!-- Toast -->
+    <string name="open_user_profile">Open user profile</string>
+    <string name="open_settings">Open settings</string>
+
+</resources>

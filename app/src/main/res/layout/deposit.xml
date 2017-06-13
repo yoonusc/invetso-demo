@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:background="#2b2f38">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="253dp">
+            a
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/investo_logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Investo Deposit "
+                android:id="@+id/textView21"
+                android:textColor="@color/button_material_light"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:id="@+id/as"
+            android:background="@color/background_d">
+
+
+            <EditText
+                android:id="@+id/editAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:hint="Deposit Amount"
+                android:backgroundTint="#86aae0"
+                android:layout_below="@+id/spinner"
+                android:layout_centerHorizontal="true" />
+
+            <!--
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@id/editAmount"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/holo_red_light"
+                            android:id="@+id/bbb"/>
+            -->
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:minWidth="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/box_with_click_effect"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Confirm"
+                android:layout_below="@+id/editAmount"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18"
+                android:layout_alignRight="@+id/textView18"
+                android:layout_alignEnd="@+id/textView18" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:spinnerMode="dialog"
+
+
+                android:textColor="#2269d4"
+                android:layout_below="@+id/textView18"
+                android:layout_toEndOf="@+id/submit"
+                android:layout_alignLeft="@+id/editAmount"
+                android:layout_alignStart="@+id/editAmount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Select Your Bank"
+                android:textColor="#e503080e"
+                android:textSize="20dp"
+                android:id="@+id/textView18"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Available Balance"
+
+                android:textSize="20dp"
+                android:id="@+id/textView3"
+                android:textColor="@color/button_material_dark"
+                android:layout_marginRight="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView17"
+                android:layout_toStartOf="@+id/textView17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0.0"
+                android:textColor="@color/button_material_dark"
+                android:layout_gravity="center"
+                android:id="@+id/editTextbalance"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_toEndOf="@+id/textView17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="\u20B9"
+                android:id="@+id/textView17"
+                android:textColor="@color/button_material_dark"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/textView18"
+                android:layout_alignEnd="@+id/textView18" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

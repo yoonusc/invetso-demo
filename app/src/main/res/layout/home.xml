@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/dash">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:id="@+id/g">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Account Value"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textColor="#ffacacac"
+            android:textSize="32sp"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u20b9"
+            android:id="@+id/bttj"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textColor="#ffacacac"
+            android:textSize="32sp"
+            android:padding="5dp"
+            android:layout_below="@+id/textView"
+            android:layout_toLeftOf="@+id/tbal"
+            android:layout_toStartOf="@+id/tbal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:id="@+id/tbal"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textColor="#ffacacac"
+            android:textSize="32sp"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/bttj"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 30 Days Investments"
+            android:id="@+id/textVi3"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textColor="#ffacacac"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_below="@+id/tbal"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="38dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="\u20b9"
+            android:id="@+id/ros"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textColor="#ffacacac"
+            android:textSize="20sp"
+            android:padding="5dp"
+
+            android:layout_alignTop="@+id/tlast"
+            android:layout_toLeftOf="@+id/tlast"
+            android:layout_toStartOf="@+id/tlast" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0.0"
+            android:id="@+id/tlast"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textColor="#ffacacac"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_below="@+id/textVi3"
+            android:layout_centerHorizontal="true" />
+        />
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/ignored_view"
+            android:layout_alignParentBottom="true">
+
+       <!-- <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/frame"/>-->
+
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </lecho.lib.hellocharts.view.LineChartView>
+
+    </FrameLayout>
+
+
+
+        </LinearLayout
+>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:id="@+id/ji">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DEPOSITED"
+                android:textColor="#c87da9"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:id="@+id/textView5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="\u20b9"
+                android:id="@+id/textView6"
+                android:padding="5dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:layout_alignBottom="@+id/textView26"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ROUNDUPS"
+                android:textColor="#c87da9"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:id="@+id/textView8"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="\u20B9"
+                android:padding="5dp"
+                android:id="@+id/textView26"
+                android:layout_marginLeft="33dp"
+                android:layout_marginStart="33dp"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0.0"
+                android:id="@+id/trnd"
+                android:padding="5dp"
+                android:layout_alignBottom="@+id/textView26"
+                android:layout_toRightOf="@+id/textView26"
+                android:layout_toEndOf="@+id/textView26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0.0"
+                android:padding="5dp"
+                android:id="@+id/tinv"
+                android:layout_below="@+id/textView5"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

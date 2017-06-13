@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/tutorial_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#1dcddd" />
+
+    <ImageView
+        android:id="@id/screenshot"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="75.0dip"
+        android:src="@drawable/growth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="I     N    V     E     S     T     O"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/screenshot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/tutorial_horizontal_padding"
+        android:paddingRight="@dimen/tutorial_horizontal_padding"
+        android:paddingTop="@dimen/tutorial_text_vertical_position"
+        android:text="@string/tutorial_zero_text"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/tutorial_text_size" />
+</RelativeLayout>

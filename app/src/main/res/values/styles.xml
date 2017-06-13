@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+	
+    <style name="fragment_text">
+        <item name="android:textColor">#ffacacac</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+	
+    <style name="floatlabelededittext">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:background">#1e2127</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textColor">#fef9fa</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:translationZ">1dp</item>
+        <item name="android:background">@drawable/primary_round</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ButtonCreate">
+        <item name="android:textColor">#fef9fa</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:minWidth">92dp</item>
+        <item name="android:minHeight">38dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:translationZ">1dp</item>
+        <item name="android:background">@drawable/primary_round2</item>
+    </style>
+
+    <style name="ButtonRecover">
+        <item name="android:textColor">#fef9fa</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:minWidth">92dp</item>
+        <item name="android:minHeight">38dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:translationZ">1dp</item>
+        <item name="android:background">@drawable/primary_round3</item>
+    </style>
+
+</resources>

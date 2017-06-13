@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.0"
+        android:background="#2b2f38">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            a
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/investo_logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Available Balance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:textSize="20dp"
+                android:id="@+id/textView3"
+                android:textColor="#2269d4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0.0"
+                android:textColor="#2b2f38"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+
+                android:id="@+id/editTextbalance"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Withdraw from Investo"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/editTextbalance"
+                android:id="@+id/textView4"
+                android:textColor="#2269d4" />
+
+
+
+            <EditText
+                android:id="@+id/editAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView4"
+                android:inputType="number"
+                android:textAlignment="center"
+               android:gravity="center_horizontal"
+                android:hint="Enter Amount"
+                android:backgroundTint="#86aae0"
+                android:layout_centerHorizontal="true"/>
+
+<!--
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/editAmount"
+                android:layout_marginTop="30dp"
+                android:background="@color/holo_red_light"
+                android:id="@+id/bbb"/>
+-->
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:minWidth="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/box_with_click_effect"
+                android:layout_below="@+id/editAmount"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Confirm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="\u20b9"
+                android:id="@+id/textView19"
+                android:layout_above="@+id/textView4"
+                android:layout_toLeftOf="@+id/editTextbalance"
+                android:layout_toStartOf="@+id/editTextbalance" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

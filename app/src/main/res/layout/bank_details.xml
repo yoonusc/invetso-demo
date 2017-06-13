@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/abc_list_selector_background_transition_holo_light">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        style="@style/Animation.AppCompat.Dialog">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="182dp"
+            android:background="#2b2f38"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.71">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/investo_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Banking Information"
+                    android:id="@+id/textView3"
+                    android:textColor="#2269d4"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="271dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:theme="@style/Base.AlertDialog.AppCompat"
+            android:backgroundTint="@color/material_deep_teal_200">
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bank"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:backgroundTint="#86aae0"
+                android:spinnerMode="dropdown" />
+
+
+            <EditText
+                android:id="@+id/account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textSize="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_below="@+id/branch"
+
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:hint="Account number"
+                android:backgroundTint="#86aae0"/>
+
+
+            <Button
+                android:id="@+id/save_account"
+                android:layout_below="@+id/netbank_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:minWidth="150dp"
+                android:background="@drawable/box_with_click_effect"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Save"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
